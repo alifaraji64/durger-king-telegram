@@ -1,0 +1,35 @@
+:root{
+    --primary-color: #e0c521
+}
+.btn{
+    padding: .6rem .8rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border:0;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 10px;
+    box-shadow: 1px -3px 52px -5px rgba(0,0,0,.77);
+    cursor: pointer;
+    outline: none;
+}
+
+.btn.add{
+    background: var(--primary-color);
+}
+.btn.add:hover{
+    background: #cab320;
+}
+.btn.remove{
+    background: tomato;
+}
+.btn.remove:hover{
+    background: rgb(209,83,61);
+}
+.btn.checkout{
+    background: rgb(153, 255, 0);
+    width: 150px;
+}
+.btn.checkout:hover{
+    color: rgb(41,141,41);
+}

@@ -1,0 +1,68 @@
+:root{
+    --primary-color: #e0c521
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 220px;
+    height: 350px;
+    border: 2px solid var(--primary-color);
+    padding: .5rem .3rem;
+    margin: 13px 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.card_title{
+    font-weight: 400;
+    text-align: center;
+}
+.card_title .card_price{
+font-weight: bold;
+}
+.image_container{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.image_container img{
+    width: 100%;
+    object-fit: cover;
+}
+.btn_container{
+    display: flex;
+    justify-content: center;
+}
+.card_badge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: rgb(227, 112, 30);
+    border-radius: 50%;
+    transform: translate(20px, -20px) scale(1);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rgb(227, 112, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    animation: scaleanimation 1s ease infinite;
+    opacity: .8;
+}
+
+@keyframes scaleanimation {
+    to{
+        transform: translate(20px, -20px) scale(1.05);
+        opacity: 1;
+    }
+}
+
+.card_badge--hidden{
+    display: none;
+}
